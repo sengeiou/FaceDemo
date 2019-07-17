@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/identifySurfaceView"
+        android:layout_width="480px"
+        android:layout_height="640px"
+        android:layout_centerInParent="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/identifySurfaceView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/statusTextViewCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/activity_status_size" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="前摄" />
+
+        <Button
+            android:id="@+id/AddtemplateButtonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="添加模板" />
+
+        <Button
+            android:id="@+id/identifyButtonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1:N识别" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

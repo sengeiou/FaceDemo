@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/verifySurfaceView"
+        android:layout_width="480px"
+        android:layout_height="640px"
+        android:layout_centerInParent="true" />
+
+    <!--    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_face" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/verifySurfaceView"
+        android:padding="1dp">
+
+        <TextView
+            android:id="@+id/statusTextCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/template1ButtonCamera"
+            android:gravity="center"
+            android:textSize="@dimen/activity_status_size" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/statusTextCamera"
+
+            android:text="前摄" />
+
+        <Button
+            android:id="@+id/template1ButtonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取模板1" />
+
+        <Button
+            android:id="@+id/template2ButtonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取模板2" />
+
+
+        <Button
+            android:id="@+id/verifyButtonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1:1比对" />
+    </LinearLayout>
+
+</RelativeLayout>
